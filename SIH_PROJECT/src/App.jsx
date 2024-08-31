@@ -6,9 +6,7 @@ function App() {
   return (
     <>
       <Header/>
-      <div className='min-h-[100svh] flex justify-center align-middle'>
         <Outlet/>
-      </div>
       <Footer/>
     </>
   )

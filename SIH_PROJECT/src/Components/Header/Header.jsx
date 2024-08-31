@@ -6,7 +6,7 @@ function Header() {
   const navigate= useNavigate()
   const move=function(){
     console.log("redirect to the user site")
-    navigate("User/")
+    navigate("User/Signup")
   }
   return (
     <>

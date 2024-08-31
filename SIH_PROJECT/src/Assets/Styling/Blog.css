@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 h1{
   font-family: "Yeseva One",serif;
 }
@@ -11,4 +12,11 @@ h1{
 h2{
   font-family: "Abril Fatface",serif;
   font-size:25px;
+}
+.insidecard{
+  font-family: "Open Sans",serif;
+}
+
+.insidecard a{
+  font-family: "Yeseva One",serif;
 }

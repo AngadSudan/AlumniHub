@@ -11,7 +11,9 @@ const router= createBrowserRouter(
       <Route path="Blogs" element={<Blogs />} >
         <Route path="Blogs/:id" element={<Blogs />}/>
       </Route> 
-      <Route path="Member" element={<Member />} /> 
+      <Route path="Member" element={<Member />} > 
+        <Route path="Signup"  element={<SignUp />} />
+      </Route>
       <Route path="Oppurtunity" element={<Oppurtunity />} /> 
       <Route path="Aboutus" element={<Aboutus />} /> 
       <Route path="User/" element={<User />} >

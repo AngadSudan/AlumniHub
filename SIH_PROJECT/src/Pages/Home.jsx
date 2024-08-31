@@ -4,8 +4,8 @@ import src from "../Assets/Logo.png"
 import college from "../Assets/college.png"
 function Home() {
   return (
-    <>
-      <div className='flex justify-evenly h-auto w-full p-4 mb-8'>
+    <div className='bg-[#f6f3f3]'>
+      <div className='flex justify-evenly h-auto w-full p-4 mb-8  border-b-2 border-black'>
       <h1 className='text-wrap w-[40%] text-[30px] my-auto'>The greatest asset any Institution can have is its Alumni. Bridging the gap between Alumni, peers , mentors and thier alma matter.</h1>
       <img src={college} alt='Colleg-teamWork' />
       </div>
@@ -18,9 +18,8 @@ function Home() {
           for all-inclusive and segmented communication pieces. The team continues to move forward with the division’s strategic plan and implementing tactics that will improve the alumni engagement percentage 
           <br/></blockquote></p>
       </div>
-      <div>
+      <div >
         <div className=' w-full'>
-          <div className='w-full '>  </div>
         <div className='border-4 border-black w-[90%] mx-auto bg-gradient-to-r from-[#cdffd8] to-[#94b9ff] h-[20%]'>
           <h1 className='text-center'>Most Used Alumni Platform</h1>
           <div className='w-full flex justify-evenly align-middle py-4 '>
@@ -31,9 +30,9 @@ function Home() {
         </div>
       </div>
 
-      <div className='p-4'>
+      <div className='p-4 mt-4 border-t-2 border-black'>
         <h3 className='text-[100px]'>Our</h3>
-        <h1 className='text-left text-[47px] mb-4'>Testimonials</h1>
+        <h1 className='text-left text-[47px] mb-4 text-[#1a807c]'>Testimonials</h1>
         <div className='flex justify-evenly mb-8'>
           <Testimonial img={src} name="x" message="lorem ipsum" />
           <Testimonial img={src} name="x" message="lorem ipsum" />
@@ -48,7 +47,7 @@ function Home() {
         <div className='border-black border-1 h-auto w-[40%] text-center mx-auto mb-8'>_______________________________</div>
       </div>
     </div>
-    </>
+    </div>
   )
 }
 

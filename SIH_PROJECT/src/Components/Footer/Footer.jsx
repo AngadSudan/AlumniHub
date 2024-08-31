@@ -1,17 +1,18 @@
 import React from 'react'
 import './Footer.css'
+import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Footer() {
   return (
     <>
-      <div className='h-[20%] w-full p-4 border-2 border-black'>
+      <div className='h-[40svh] w-full p-4 pt-1 border-2 border-black mb-1'>
         <div className='flex justify-evenly p-16'>
           <ul>
-            <li className='mr-16 mb-4' to="#">Home</li>
-            <li className='mr-16 mb-4' to="#">Blog</li>
-            <li className='mr-16 mb-4' to="#">Members</li>
-            <li className='mr-16 mb-4' to="#">Opportunities</li>
-            <li className='mr-16 mb-4' to="#">About Us</li>
+          <li><NavLink className='mr-16' to="Home">Home</NavLink></li>
+          <li><NavLink className='mr-16' to="Blogs">Blog</NavLink></li>
+          <li><NavLink className='mr-16' to="Member">Members</NavLink></li>
+          <li><NavLink className='mr-16' to="Oppurtunity">Opportunities</NavLink></li>
+          <li><NavLink className='mr-16' to="Aboutus">About Us</NavLink></li>
           </ul>
           <div>
             <h1 className='text-[40px] text-right'>Alumni-Hub</h1>
@@ -36,7 +37,7 @@ function Footer() {
         <a> <FontAwesomeIcon icon={faYoutube} /> </a> */}
         {/* <a> <FontAwesomeIcon icon="fa-brands fa-square-x-twitter" /> </a> */}
         </span>
-      <p className='text-center text-xl mt-16'>copyright reserved- 2024</p>
+      <p className='text-center text-xl mt-4 mb-8 '>copyright reserved- 2024</p>
     </>
   )
 }

@@ -1,14 +1,17 @@
 import React from 'react'
+import logo from "../../Assets/Logo.png"
 import {Link, NavLink, useNavigate} from 'react-router-dom'
 import './Header.css'
 function Header() {
+  const navigate= useNavigate()
   const move=function(){
     console.log("redirect to the user site")
+    navigate("User/")
   }
   return (
     <>
-        <img src='../Assets/Logo.png' className='h-8 w-full ' alt="Alumni-HUB"/>
-        <div id="Header" className='text-slate-100 bg-green-600  flex justify-evenly'>
+        <img src={logo} className='h-[5rem] w-[10%] ml-8' alt="Alumni-HUB"/>
+        <div id="Header" className='text-slate-100   flex justify-evenly'>
             {/* <div> */}
                 <ul className='flex justify-evenly p-4 pl-16'>
                   <li><NavLink className='mr-16' to="Home">Home</NavLink></li>
@@ -18,7 +21,7 @@ function Header() {
                   <li><NavLink className='mr-16' to="Aboutus">About Us</NavLink></li>
                 </ul>
             {/* </div> */}
-            <Link to="/Signup"><button onClick={move} className='bg-yellow-600 my-2 h-[2.6rem] w-[10rem] text-3xl'><b>Login</b></button></Link>
+            <button onClick={move} className='bg-yellow-600 my-2 h-[2.6rem] w-[10rem] text-3xl'><b>Join Us</b></button>
         </div>
     </>
   )

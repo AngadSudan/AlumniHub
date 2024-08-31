@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import {Home,Blogs,Member,Oppurtunity,Aboutus,SignUp} from "./Pages/index.js"
+import {Home,Blogs,Member,Oppurtunity,Aboutus,SignUp, User,Login} from "./Pages/index.js"
 const router= createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
@@ -12,7 +12,10 @@ const router= createBrowserRouter(
       <Route path="Member" element={<Member />} /> 
       <Route path="Oppurtunity" element={<Oppurtunity />} /> 
       <Route path="Aboutus" element={<Aboutus />} /> 
-      <Route path="Login" element={<SignUp />} /> 
+      <Route path="User/" element={<User />} >
+        <Route path="Signup"  element={<SignUp />} />
+        <Route path="Login"  element={<Login />} /> 
+      </Route> 
     </Route>
   )
 )

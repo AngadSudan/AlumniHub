@@ -4,12 +4,10 @@ import HeaderLogin from './HeaderLogin'
 function User() {
   return (
     <>
-      <div className='h-[100%] w-full'>
+      <div className='h-[60%] w-full'>
 
         <HeaderLogin />
-        <div className='bg-red-800 '>
-          <Outlet/>
-        </div>
+        <Outlet/>
       </div>
     </>
   )

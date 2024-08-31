@@ -2,3 +2,9 @@ li:hover{
     cursor: pointer;
     border-bottom: 1px solid whitesmoke ;
 }
+#Header{
+    background-color: #1c7c77;
+}
+button{
+    background-color: #c99e33;
+}

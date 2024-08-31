@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 function Footer() {
   return (
     <>
@@ -29,10 +29,14 @@ function Footer() {
       <span className='w-full flex justify-center'>
         <a>Instagram</a>
         <a>Twitter</a>
-        <a>Facebook</a>
+        <a>Youtube</a>
         <a>Linkedin</a>
+        {/* <a> <FontAwesomeIcon icon={faInstagram} /> </a>
+        <a> <FontAwesomeIcon icon={faLinkedin} /> </a>
+        <a> <FontAwesomeIcon icon={faYoutube} /> </a> */}
+        {/* <a> <FontAwesomeIcon icon="fa-brands fa-square-x-twitter" /> </a> */}
         </span>
-      <h1 className='text-center text-3xl mt-16'>copyright reserved- 2024</h1>
+      <p className='text-center text-xl mt-16'>copyright reserved- 2024</p>
     </>
   )
 }

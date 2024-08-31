@@ -1,3 +1,4 @@
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
-export {Header, Footer}
+import Card from "./BlogCard/Card"
+export {Header, Footer,Card}

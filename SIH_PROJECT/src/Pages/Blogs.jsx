@@ -1,7 +1,7 @@
 import React from 'react'
 import {Card} from "../Components/index"
 import src from "../Assets/Logo.png"
-import "./Blog.css"
+import "../Assets/Styling/Blog.css"
 function Blogs() {
   return (
     <>

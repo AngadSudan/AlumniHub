@@ -4,8 +4,7 @@ import HeaderLogin from './HeaderLogin'
 function User() {
   return (
     <>
-      <div className='h-[60%] w-full'>
-
+      <div className='h-[80%] w-full'>
         <HeaderLogin />
         <Outlet/>
       </div>
